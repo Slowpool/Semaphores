@@ -11,20 +11,27 @@ public partial class Program
 {
     public static void SantaClaus()
     {
-        Thread[] threads = new Thread[Reindeer.THREADS_NUMBER];
-        for (int i = 0; i < threads.Length; i++)
-        {
-            int ownI = i;
-            threads[i] = new Thread(() =>
-            {
-                Reindeer thread = new(ownI);
-                thread.Imitate();
-            });
-        }
+        Thread[] threads;
 
-        foreach (var thread in threads)
+        bool useReindeers = true;
+        bool useElves = false;
+        if (useReindeers)
         {
-            thread.Start();
+            threads = new Thread[Reindeer.THREADS_NUMBER];
+            for (int i = 0; i < threads.Length; i++)
+            {
+                int ownI = i;
+                threads[i] = new Thread(() =>
+                {
+                    Reindeer thread = new(ownI);
+                    thread.Imitate();
+                });
+            }
+
+            foreach (var thread in threads)
+            {
+                thread.Start();
+            }
         }
 
         Thread santa = new(() =>
@@ -34,20 +41,23 @@ public partial class Program
         });
         santa.Start();
 
-        threads = new Thread[Elf.THREADS_NUMBER];
-        for (int i = 0; i < threads.Length; i++)
+        if (useElves)
         {
-            int ownI = i;
-            threads[i] = new Thread(() =>
+            threads = new Thread[Elf.THREADS_NUMBER];
+            for (int i = 0; i < threads.Length; i++)
             {
-                Elf thread = new(ownI);
-                thread.Imitate();
-            });
-        }
+                int ownI = i;
+                threads[i] = new Thread(() =>
+                {
+                    Elf thread = new(ownI);
+                    thread.Imitate();
+                });
+            }
 
-        foreach (var thread in threads)
-        {
-            thread.Start();
+            foreach (var thread in threads)
+            {
+                thread.Start();
+            }
         }
     }
 
@@ -75,7 +85,7 @@ public partial class Program
             {
                 mutex.WaitOne();
                 arrivedDeers++;
-                Console.WriteLine($"reindeer {number} arrived");
+                Console.WriteLine($"reindeer {number} arrived. arrived reindeers: {arrivedDeers}");
                 if (arrivedDeers == THREADS_NUMBER)
                 {
                     allReindeersArived = true;
@@ -113,17 +123,22 @@ public partial class Program
             if (Reindeer.allReindeersArived)
             {
                 mutex.WaitOne();
-                Elf.elvesAwaitingForHelp = 0;
+                Reindeer.hitchedDeers = 0;
+                Reindeer.arrivedDeers = 0;
+                Reindeer.allReindeersArived = false;
                 mutex.Release();
 
                 PrepareSleigh();
             }
             else if (Elf.elvesAreReadyToGetHelp)
             {
+                // grabs as much elves as he can
                 mutex.WaitOne();
+                Elf.elvesRemainToHelp = Elf.elvesAwaitingForHelp;
                 Elf.elvesAwaitingForHelp = 0;
+                Elf.elvesAreReadyToGetHelp = false;
                 mutex.Release();
-                
+
                 HelpElves();
             }
             else
@@ -139,26 +154,22 @@ public partial class Program
             }
             @return.WaitOne();
             Console.WriteLine("CHRISTMASS");
-
-            mutex.WaitOne();
-            Reindeer.hitchedDeers = 0;
-            mutex.Release();
         }
 
         public void HelpElves()
         {
             Console.WriteLine("santa gonna help elves");
-            for (int i = 0; i < Reindeer.THREADS_NUMBER; i++)
-            {
-                Elf.help.Release();
-            }
-            @return.WaitOne();
-            Console.WriteLine("HELP COMPLITED");
 
             mutex.WaitOne();
-            Elf.elvesAwaitingForHelp = 0;
-            Elf.elvesWhoGotHelp = 0;
+            for (int i = Elf.elvesRemainToHelp; i != 0; i--)
+            {
+                Elf.help.Release();
+                Console.WriteLine("one elf got help");
+            }
             mutex.Release();
+
+            @return.WaitOne();
+            Console.WriteLine("HELP COMPLITED");
         }
     }
 
@@ -169,12 +180,13 @@ public partial class Program
         public static bool elvesAreReadyToGetHelp = false;
         public static Semaphore help = new(0, int.MaxValue);
         public static int elvesAwaitingForHelp = 0;
-        public static int elvesWhoGotHelp = 0;
+        public static int elvesRemainToHelp = 0;
         public override void ImitateIteration()
         {
             Thread.Sleep(100);
-            if (Random.Shared.NextDouble() > 0.9)
+            if (Random.Shared.NextDouble() > 0.1)
             {
+                Console.WriteLine("+elf");
                 mutex.WaitOne();
                 elvesAwaitingForHelp++;
                 Console.WriteLine($"elf {number} needs help. elves need help: {elvesAwaitingForHelp}");
@@ -194,10 +206,10 @@ public partial class Program
             Thread.Sleep(1000);
 
             mutex.WaitOne();
-            elvesWhoGotHelp++;
+            elvesRemainToHelp--;
             Console.WriteLine($"elf {number} got help");
             // all elves who needed the help got it
-            if (elvesWhoGotHelp == ELVES_TO_GET_HELP)
+            if (elvesRemainToHelp == 0)
             {
                 Santa.@return.Release();
             }
