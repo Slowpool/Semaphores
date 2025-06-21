@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|c:\\users\\patrick steven\\source\\repos\\semaphores\\semaphores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|solutionrelative:semaphores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|c:\\users\\patrick steven\\source\\repos\\semaphores\\semaphores\\consumerandproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|solutionrelative:semaphores\\consumerandproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|c:\\users\\patrick steven\\source\\repos\\semaphores\\semaphores\\fifo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|solutionrelative:semaphores\\fifo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|c:\\users\\patrick steven\\source\\repos\\semaphores\\semaphores\\authorsfifo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|solutionrelative:semaphores\\authorsfifo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|c:\\users\\patrick steven\\source\\repos\\semaphores\\semaphores\\queue2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|solutionrelative:semaphores\\queue2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|c:\\users\\patrick steven\\source\\repos\\semaphores\\semaphores\\queue3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C91514E9-8CC7-4CC6-AD09-C343AA38D04D}|Semaphores\\Semaphores.csproj|solutionrelative:semaphores\\queue3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 531,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsumerAndProducer.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\ConsumerAndProducer.cs",
+              "RelativeDocumentMoniker": "Semaphores\\ConsumerAndProducer.cs",
+              "ToolTip": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\ConsumerAndProducer.cs",
+              "RelativeToolTip": "Semaphores\\ConsumerAndProducer.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T19:08:36.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthorsFifo.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\AuthorsFifo.cs",
+              "RelativeDocumentMoniker": "Semaphores\\AuthorsFifo.cs",
+              "ToolTip": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\AuthorsFifo.cs",
+              "RelativeToolTip": "Semaphores\\AuthorsFifo.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswCoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T18:31:54.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fifo.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Fifo.cs",
+              "RelativeDocumentMoniker": "Semaphores\\Fifo.cs",
+              "ToolTip": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Fifo.cs",
+              "RelativeToolTip": "Semaphores\\Fifo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwEMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T18:49:33.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Queue3.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Queue3.cs",
+              "RelativeDocumentMoniker": "Semaphores\\Queue3.cs",
+              "ToolTip": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Queue3.cs",
+              "RelativeToolTip": "Semaphores\\Queue3.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T18:39:48.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Queue2.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Queue2.cs",
+              "RelativeDocumentMoniker": "Semaphores\\Queue2.cs",
+              "ToolTip": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Queue2.cs",
+              "RelativeToolTip": "Semaphores\\Queue2.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwC0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T18:27:39.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Program.cs",
+              "RelativeDocumentMoniker": "Semaphores\\Program.cs",
+              "ToolTip": "C:\\Users\\Patrick Steven\\source\\repos\\Semaphores\\Semaphores\\Program.cs",
+              "RelativeToolTip": "Semaphores\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T18:57:05.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 151,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
