@@ -14,7 +14,7 @@ public partial class Program
         Thread[] threads;
 
         bool useReindeers = true;
-        bool useElves = false;
+        bool useElves = true;
         if (useReindeers)
         {
             threads = new Thread[Reindeer.THREADS_NUMBER];
@@ -184,9 +184,8 @@ public partial class Program
         public override void ImitateIteration()
         {
             Thread.Sleep(100);
-            if (Random.Shared.NextDouble() > 0.1)
+            if (Random.Shared.NextDouble() > 0.9)
             {
-                Console.WriteLine("+elf");
                 mutex.WaitOne();
                 elvesAwaitingForHelp++;
                 Console.WriteLine($"elf {number} needs help. elves need help: {elvesAwaitingForHelp}");

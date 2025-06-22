@@ -30,7 +30,9 @@ public partial class Program
         // TheDiningSavages2();
         // TheBarbershopProblem();
         // TheHarderBarbershopProblem();
-        SantaClaus();
+        // SantaClaus();
+        // H2O();
+        H2O_Second();
     }
     const string ThreadA = "A";
     const string ThreadB = "B";
